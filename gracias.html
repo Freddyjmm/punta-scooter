@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu reserva! - PuntaScoot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://t.contentsquare.net/uxa/921f075e5d934.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#FF8A8A',
+                        'brand-blue': '#4A90E2',
+                        'brand-dark': '#2C3E50',
+                        'brand-light': '#F8F9FA'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+
+        main { flex: 1; display: flex; align-items: center; justify-content: center; background-color: #F8F9FA; }
+
+        .success-icon {
+            animation: scaleIn 0.5s ease-out forwards;
+        }
+
+        @keyframes scaleIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-brand-light">
+
+    <!-- Header -->
+    <header class="bg-white py-4 px-8 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+        <a href="punta-scooter.html" class="text-2xl font-black tracking-tighter">PUNTA<span class="text-brand-pink">SCOOT</span></a>
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="gracias-en.html" class="text-sm font-bold text-gray-500 hover:text-brand-pink uppercase tracking-wide flex items-center" title="Switch to English"><i class="fa-solid fa-globe mr-1"></i> EN</a>
+            <a href="punta-scooter.html" class="text-sm font-bold hover:text-brand-pink uppercase tracking-wide">Inicio</a>
+            <a href="modelos.html" class="text-sm font-bold hover:text-brand-pink uppercase tracking-wide">Modelos</a>
+            <a href="punta-scooter.html#contacto" class="text-sm font-bold hover:text-brand-pink uppercase tracking-wide">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Main Content: Thank You Message -->
+    <main class="px-6 py-16">
+        <div class="max-w-2xl mx-auto bg-white p-10 md:p-16 rounded-2xl shadow-xl text-center border-t-8 border-brand-pink">
+            <div class="mb-8 success-icon inline-flex items-center justify-center w-24 h-24 rounded-full bg-green-100 text-green-500">
+                <i class="fa-solid fa-check text-5xl"></i>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-black uppercase mb-4 text-brand-dark">¡Reserva Recibida!</h1>
+
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed font-sans">
+                Gracias por elegir <span class="font-bold">PuntaScoot</span>. Hemos recibido tu solicitud de reserva con éxito.
+                En breve, uno de nuestros asesores se pondrá en contacto contigo vía WhatsApp o correo electrónico para confirmar los detalles y disponibilidad.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="punta-scooter.html" class="w-full sm:w-auto bg-brand-blue text-white px-8 py-3 font-bold uppercase tracking-wider hover:bg-blue-600 transition text-center rounded-lg shadow-md">
+                    <i class="fa-solid fa-house mr-2"></i> Volver al Inicio
+                </a>
+                <a href="https://wa.me/18297708269" target="_blank" class="w-full sm:w-auto bg-green-500 text-white px-8 py-3 font-bold uppercase tracking-wider hover:bg-green-600 transition text-center rounded-lg shadow-md">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Escribirnos
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="bg-brand-dark text-white py-8 text-center">
+        <div class="container mx-auto px-8">
+            <div class="text-2xl font-black tracking-tighter mb-4">PUNTA<span class="text-brand-pink">SCOOT</span></div>
+            <p class="text-sm opacity-75">© 2024 PuntaScoot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

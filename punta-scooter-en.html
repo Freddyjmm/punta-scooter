@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Rental in Punta Cana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://t.contentsquare.net/uxa/921f075e5d934.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#FF8A8A', // Inspirado en el rosa de la imagen
+                        'brand-blue': '#4A90E2', // Azul del banner
+                        'brand-dark': '#2C3E50', // Azul oscuro del footer
+                        'brand-light': '#F8F9FA'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+
+        .hero-bg {
+            background: linear-gradient(90deg, #FF8A8A 50%, #f0f0f0 50%);
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg {
+                background: linear-gradient(180deg, #FF8A8A 50%, #f0f0f0 50%);
+            }
+        }
+
+        .product-showcase {
+            background: linear-gradient(135deg, #f0f0f0 0%, #FF8A8A 100%);
+        }
+
+        /* Floating WhatsApp Button */
+        .float-wa {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .float-wa:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white py-4 px-8 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+        <div class="text-2xl font-black tracking-tighter">PUNTA<span class="text-brand-pink">SCOOT</span></div>
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="punta-scooter.html" class="text-sm font-bold text-gray-500 hover:text-brand-pink uppercase tracking-wide flex items-center" title="Cambiar a Español"><i class="fa-solid fa-globe mr-1"></i> ES</a>
+            <a href="#reservar" class="text-sm font-bold hover:text-brand-pink uppercase tracking-wide">Book</a>
+            <a href="#contacto" class="text-sm font-bold hover:text-brand-pink uppercase tracking-wide">Contact</a>
+            <a href="#reservar" class="bg-brand-pink text-white px-6 py-2 font-bold uppercase tracking-wide hover:bg-pink-500 transition">Rent Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[500px] flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-8 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 py-12 md:pr-12 text-center md:text-left">
+                <div class="flex justify-center md:justify-start mb-4">
+                    <i class="fa-solid fa-motorcycle text-4xl text-white"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-black uppercase leading-tight mb-4">Freedom<br>Perfected</h1>
+                <p class="text-lg font-semibold mb-8">Discover Punta Cana at your own pace. Premium scooters at an incredible price.</p>
+                <a href="modelos-en.html" class="bg-brand-blue text-white px-8 py-3 font-bold uppercase tracking-wider hover:bg-blue-600 transition inline-block">View Models</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center py-12">
+                <!-- Placeholder for a Scooter Image -->
+                <img src="img/scooter.jpg" alt="Scooter en Punta Cana" class="max-w-xs md:max-w-md rounded-xl shadow-2xl transform rotate-[-5deg]">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Bar (Blue) -->
+    <section class="bg-brand-blue text-white py-4">
+        <div class="container mx-auto px-8 flex flex-wrap justify-between items-center text-sm font-bold uppercase text-center">
+            <div class="w-full md:w-1/3 py-2">Helmet Included</div>
+            <div class="w-full md:w-1/3 py-2">WhatsApp Support</div>
+            <div class="w-full md:w-1/3 py-2">Basic Insurance</div>
+        </div>
+    </section>
+
+    <!-- Product Details like the angled image -->
+    <section class="product-showcase py-20 relative overflow-hidden">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-12">Maximum Adventure.<br>Minimum Worry.</h2>
+            <div class="relative max-w-4xl mx-auto">
+                <img src="img/scooter_price.jpg" alt="Detalle del Scooter" class="w-full rounded-2xl shadow-xl">
+                <!-- Pointers (simulated) -->
+                <div class="hidden md:block absolute top-1/4 left-10 bg-white px-3 py-1 text-xs font-bold rounded-full shadow-lg"><i class="fa-solid fa-circle-check text-brand-blue mr-1"></i> Easy to ride</div>
+                <div class="hidden md:block absolute bottom-1/4 right-10 bg-white px-3 py-1 text-xs font-bold rounded-full shadow-lg"><i class="fa-solid fa-circle-check text-brand-blue mr-1"></i> Low fuel consumption</div>
+                <div class="hidden md:block absolute bottom-1/4 right-10 bg-white px-3 py-1 text-xs font-bold rounded-full shadow-lg"><i class="fa-solid fa-circle-check text-brand-blue mr-1"></i> 2 Passengers</div>
+            </div>
+            <div class="mt-12">
+                <a href="#reservar" class="bg-brand-pink text-white px-8 py-3 font-bold uppercase tracking-wider hover:bg-pink-500 transition inline-block">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-8">
+            <h2 class="text-3xl font-black uppercase text-center mb-16">Your Best Travel Companion.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <div class="w-20 h-20 mx-auto rounded-full bg-pink-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-calendar-check text-3xl text-brand-pink"></i>
+                    </div>
+                    <h3 class="font-bold uppercase mb-3">Easy Booking</h3>
+                    <p class="text-sm text-gray-600">Select your dates online and we will deliver the scooter wherever you tell us.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 mx-auto rounded-full bg-pink-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-wallet text-3xl text-brand-pink"></i>
+                    </div>
+                    <h3 class="font-bold uppercase mb-3">Save Money</h3>
+                    <p class="text-sm text-gray-600">Avoid expensive taxis. A scooter is the most economical way to explore Bavaro and Punta Cana.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 mx-auto rounded-full bg-pink-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-brand-pink"></i>
+                    </div>
+                    <h3 class="font-bold uppercase mb-3">Total Freedom</h3>
+                    <p class="text-sm text-gray-600">Go to hidden beaches, local restaurants and explore without depending on schedules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Contact & Reservation Section -->
+    <section id="reservar" class="py-20 bg-brand-light border-t border-gray-200">
+        <div class="container mx-auto px-8 max-w-5xl">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Reservation Form -->
+                <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-black uppercase mb-6 text-center">Make your Reservation</h2>
+                    <form action="https://api.staticforms.dev/submit" method="POST" class="space-y-4">
+                        <!--staticforms-->
+                        <input type="hidden" name="apiKey" value="sf_2916cc307112d987c706f174">
+                        <!--Redirect to thanks page -->
+                        <input type="hidden" name="redirectTo" value="gracias-en.html">
+
+                        <!-- Honeypot field for spam protection -->
+                        <input type="text" name="honeypot" style="display:none">
+
+                        <div>
+                            <label class="block text-sm font-bold mb-1" >Full Name</label>
+                            <input name="Nombre completo" type="text" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-brand-pink" required>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-1/2">
+                                <label class="block text-sm font-bold mb-1">Start Date</label>
+                                <input name="init_fecha" type="date" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-brand-pink" required>
+                            </div>
+                            <div class="w-1/2">
+                                <label class="block text-sm font-bold mb-1">End Date</label>
+                                <input name="final_fecha" type="date" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-brand-pink" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1">Delivery Location (Hotel/Villa)</label>
+                            <input name="lugar_entrega" type="text" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-brand-pink" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-1">Phone</label>
+                            <input name="telefono" type="tel" class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-brand-pink" required>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-dark text-white font-bold uppercase py-4 rounded hover:bg-gray-800 transition mt-4">Request Availability</button>
+                    </form>
+                </div>
+
+                <!-- WhatsApp Direct Contact -->
+                <div id="contacto" class="md:w-1/2 flex flex-col justify-center text-center md:text-left">
+                    <h2 class="text-3xl font-black uppercase mb-4">Quick Questions?</h2>
+                    <p class="mb-8 text-gray-600">"The best customer service. They helped us plan our route through Macao and delivered the scooter to our Airbnb."</p>
+
+                    <div class="bg-green-50 p-6 rounded-xl border border-green-200 inline-block">
+                        <h3 class="font-bold text-green-800 mb-2">Message us on WhatsApp</h3>
+                        <p class="text-sm text-green-700 mb-4">We reply in under 10 minutes to help you with your rental.</p>
+                        <a href="https://wa.me/18297708269?text=Hola,%20I%20am%20interested%20in%20renting%20a%20scooter%20in%20Punta%20Cana" target="_blank" class="bg-[#25d366] text-white px-6 py-3 rounded-full font-bold inline-flex items-center hover:bg-green-600 transition">
+                            <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Chat Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="bg-brand-dark text-white py-20 text-center">
+        <div class="container mx-auto px-8">
+            <div class="mb-6"><i class="fa-regular fa-face-smile text-4xl"></i></div>
+            <h2 class="text-3xl font-black uppercase mb-4">Unforgettable Adventures.<br>Guaranteed.</h2>
+            <p class="max-w-2xl mx-auto text-gray-400 mb-8 text-sm">Book now, pay later.</p>
+            <a href="#reservar" class="bg-white text-brand-dark px-8 py-3 font-bold uppercase tracking-wider hover:bg-gray-200 transition inline-block">Book a Scooter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 text-xs py-6 text-center">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <div>© 2023 PuntaScoot</div>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-white">Terms</a>
+                <a href="#" class="hover:text-white">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/18297708269?text=Hola,%20estoy%20interesado%20en%20alquilar%20un%20scooter%20en%20Punta%20Cana" class="float-wa" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
